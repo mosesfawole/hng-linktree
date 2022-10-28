@@ -1,5 +1,15 @@
+import Footer from "./components/Footer";
+import Links from "./components/Links";
+import Profile from "./components/Profile";
+
 function App() {
-  return <div className=""></div>;
+  return (
+    <div>
+      <Profile />
+      <Links />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
