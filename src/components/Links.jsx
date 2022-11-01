@@ -5,7 +5,7 @@ const Links = () => {
   return (
     <div>
       <div className="links">
-        <a href="https://twitter/pharwoleh" id="btn-zuri">
+        <a href="https://twitter.com/pharwoleh" id="twitter">
           Twitter
         </a>
         <a
