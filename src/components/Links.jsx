@@ -1,5 +1,6 @@
 import React from "react";
-
+import GithubIcon from "../assets/icons8-github.svg";
+import SlackIcon from "../assets/icons8-slack-new.svg";
 const Links = () => {
   return (
     <div>
@@ -38,6 +39,14 @@ const Links = () => {
           Design Books
         </a>
         <sub>Free design book offerd by Zuri</sub>
+      </div>
+      <div className="link-footer">
+        <div className="icons">
+          <img src={SlackIcon} alt="slack icon" />
+          <a href="https://github.com/mosesfawole">
+            <img src={GithubIcon} alt="github icon" />
+          </a>
+        </div>
       </div>
     </div>
   );

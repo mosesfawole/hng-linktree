@@ -17,7 +17,7 @@ body {
   padding: 20px;
 }
 .links a {
-  background: gainsboro;
+  background: #eaecf0;
   padding: 16px;
   border-radius: 8px;
   text-align: center;
@@ -27,6 +27,7 @@ body {
   font-weight: 400;
 }
 .links a:hover {
+  background: #667085;
   outline: 1px solid black;
   transition: all 0.3s ease-in-out;
 }
@@ -36,7 +37,19 @@ sub {
 .links a:hover sub {
   display: flex;
 }
-
+.link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-footer .icons {
+  display: flex;
+  gap: 12px;
+}
+.link-footer img {
+  width: 30px;
+  height: 30px;
+}
 .avatar {
   display: flex;
   justify-content: center;
