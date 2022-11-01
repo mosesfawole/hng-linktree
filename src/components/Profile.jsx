@@ -7,7 +7,9 @@ const Profile = () => {
       <div className="avatar">
         <figure>
           <img src={Avatar} alt="Profile Avatar" id="profile_img" />
-          <figcaption>Moses Fawole</figcaption>
+          <figcaption>
+            <b>Moses Fawole</b>
+          </figcaption>
         </figure>
       </div>
     </div>
