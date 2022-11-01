@@ -21,7 +21,7 @@ const Links = () => {
         >
           Zuri Books
         </a>
-        <sub>Find books about design and coding.</sub>
+        <sub className="books">Find books about design and coding.</sub>
         <a
           href="https://books.zuri.team/python-for-beginners?ref_id=<mosesfawole>"
           id="book_python"

@@ -1,11 +1,14 @@
 import React from "react";
-
+import Avatar from "../assets/avatar.png";
 const Profile = () => {
   return (
     <div>
       Profile
       <div className="avatar">
-        <img src="" alt="Profile Avatar" id="profile_img" />
+        <figure>
+          <img src={Avatar} alt="Profile Avatar" id="profile_img" />
+          <figcaption>Moses Fawole</figcaption>
+        </figure>
       </div>
     </div>
   );
