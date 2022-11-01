@@ -7,7 +7,52 @@
 body {
   font-family: "Inter", sans-serif;
 }
+/* profile */
 
+.profile {
+  padding: 20px;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.profile {
+  margin-top: 60px;
+}
+.avatar {
+  margin-bottom: 40px;
+}
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.share img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  border: 1px dotted #9fa0a3;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+}
+.share:hover {
+  background-color: #667085;
+  color: #eaecf0;
+  transition: all 0.3s ease-in-out;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/*  links*/
 .links {
   display: flex;
   justify-content: center;
@@ -31,63 +76,18 @@ body {
   outline: 1px solid black;
   transition: all 0.3s ease-in-out;
 }
+
 sub {
-  display: none;
+  text-align: center;
 }
-.links a:hover sub {
-  display: flex;
-}
+
 .link-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
-.share img {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  border: 1px dotted #9fa0a3;
-  border-radius: 50%;
-  cursor: pointer;
-  padding: 10px;
-}
-.share:hover {
-  background-color: #667085;
-  color: #eaecf0;
-  transition: all 0.3s ease-in-out;
-}
 
-.profile {
-  padding: 20px;
-}
-.avatar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.link-footer .icons {
-  display: flex;
-  gap: 12px;
-}
-.link-footer img {
-  width: 30px;
-  height: 30px;
-}
-.profile {
-  margin-top: 60px;
-}
-.avatar {
-  margin-bottom: 40px;
-}
-.avatar img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
 .desktop {
   display: none;
 }
@@ -95,12 +95,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
+
 .mobile p {
   position: absolute;
   right: 10%;
@@ -120,13 +115,23 @@ a {
   transition: all 0.3s ease-in-out;
   color: #eaecf0;
 }
+
 /* footer */
 .footer {
   margin-top: 120px;
 }
+.link-footer .icons {
+  display: flex;
+  gap: 12px;
+}
+.link-footer img {
+  width: 30px;
+  height: 30px;
+}
 hr {
   max-width: 80%;
   margin: auto;
+  background: #eaecf0;
 }
 .logos {
   display: flex;

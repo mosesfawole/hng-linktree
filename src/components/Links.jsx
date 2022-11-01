@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import GithubIcon from "../assets/icons8-github.svg";
 import SlackIcon from "../assets/icons8-slack-new.svg";
 const Links = () => {
+  const [show, setShow] = useState(false);
+
+  const handleHover = () => {
+    setShow(!show);
+  };
+
   return (
     <div>
       <div className="links">
@@ -16,22 +22,33 @@ const Links = () => {
           Zuri Team
         </a>
         <a
+          onMouseEnter={handleHover}
           href="https://books.zuri.team/"
           title="Find books about design and coding"
           id="books"
         >
           Zuri Books
         </a>
-        <sub className="books">Find books about design and coding.</sub>
+        {show ? (
+          <sub className="books">Find books about design and coding.</sub>
+        ) : (
+          ""
+        )}
         <a
+          onMouseEnter={handleHover}
           href="https://books.zuri.team/python-for-beginners?ref_id=<mosesfawole>"
           id="book_python"
         >
           Python books
         </a>
-        <sub>
-          The Python for beginners book is the best book yo get started for pyt
-        </sub>
+        {show ? (
+          <sub>
+            You want to learn Python as a complete beginner to being a pro? Then
+            this book is what you need!
+          </sub>
+        ) : (
+          ""
+        )}
         <a href="https://background.zuri.team/" id="pitch">
           Background check for coders
         </a>
